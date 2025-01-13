@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(212, 212, 212);
 }
 
 a {
@@ -13,9 +14,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
     padding: 1rem 2rem;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .header-left h1{
@@ -31,34 +33,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 1rem 2rem;
-    background-color: rgb(212, 212, 212);
+    padding: 40px;
+    text-align: left;
+}
+
+.meals-left {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40%;
+    width: auto;
+}
+
+.meals-left h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    margin: 0;
 }
 
 .meals-right {
     display: flex;
-    width: 44%;
-    padding: 1rem 2rem;
-}
-.meals-left {
-    width: 25%;
-    padding: 0px;
-    color: blue;
+    gap: 10px;
 }
 
 img {
-    height: 300px;
-    width: %;
-    padding-right: 5px;
+    width: auto;
+    max-width: 100%; /* Prevents images from exceeding the container */
 }
 
-.breakfast .fresh-txt {
+.fresh-txt {
     position: relative;
-    width: 100px;
+    width: 33%;
     padding: 5px;
-    top: -35%;
-    right: -45%;
     color: black; 
     text-align: center;
     background-color: white;
@@ -66,35 +72,41 @@ img {
 
 .breakfast-txt {
     position: relative;
-    width: 200px;
+    width: 70%;
     padding: 5px;
-    bottom: 29%;
-    left: 45%;
     color: black; 
     text-align: center;
     background-color: rgba(165, 250, 37, 0.865);
 }
 
 .sweet-txt {
+    position: relative;
     color: black; 
+    padding: 5px;
     text-align: center;
     background-color: white;
 }
 
 .lunch-txt {
-    color: black; 
+    position: relative;
+    color: black;
+    padding: 5px;
     text-align: center;
     background-color: rgba(165, 250, 37, 0.865);
 }
 
 .delicious-txt {
-    color: black; 
+    position: relative;
+    color: black;
+    padding: 5px;
     text-align: center;
     background-color: white;
 }
 
 .dinner-txt {
-    color: black; 
+    position: relative;
+    color: black;
+    padding: 5px;
     text-align: center;
     background-color: rgba(165, 250, 37, 0.865);
 }
