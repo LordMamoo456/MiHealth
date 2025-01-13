@@ -14,6 +14,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .header-left h1{
@@ -25,6 +27,74 @@ header {
     gap: 1rem;
 }
 
-.meals {
+#meals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
     background-color: rgb(212, 212, 212);
+}
+
+.meals-right {
+    display: flex;
+    width: 44%;
+    padding: 1rem 2rem;
+}
+.meals-left {
+    width: 25%;
+    padding: 0px;
+    color: blue;
+}
+
+img {
+    height: 300px;
+    width: %;
+    padding-right: 5px;
+}
+
+.breakfast .fresh-txt {
+    position: relative;
+    width: 100px;
+    padding: 5px;
+    top: -35%;
+    right: -45%;
+    color: black; 
+    text-align: center;
+    background-color: white;
+}
+
+.breakfast-txt {
+    position: relative;
+    width: 200px;
+    padding: 5px;
+    bottom: 29%;
+    left: 45%;
+    color: black; 
+    text-align: center;
+    background-color: rgba(165, 250, 37, 0.865);
+}
+
+.sweet-txt {
+    color: black; 
+    text-align: center;
+    background-color: white;
+}
+
+.lunch-txt {
+    color: black; 
+    text-align: center;
+    background-color: rgba(165, 250, 37, 0.865);
+}
+
+.delicious-txt {
+    color: black; 
+    text-align: center;
+    background-color: white;
+}
+
+.dinner-txt {
+    color: black; 
+    text-align: center;
+    background-color: rgba(165, 250, 37, 0.865);
 }
