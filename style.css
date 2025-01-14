@@ -57,56 +57,7 @@ header {
 }
 
 img {
-    width: auto;
-    max-width: 100%; /* Prevents images from exceeding the container */
-}
-
-.fresh-txt {
-    position: relative;
-    width: 33%;
-    padding: 5px;
-    color: black; 
-    text-align: center;
-    background-color: white;
-}
-
-.breakfast-txt {
-    position: relative;
-    width: 70%;
-    padding: 5px;
-    color: black; 
-    text-align: center;
-    background-color: rgba(165, 250, 37, 0.865);
-}
-
-.sweet-txt {
-    position: relative;
-    color: black; 
-    padding: 5px;
-    text-align: center;
-    background-color: white;
-}
-
-.lunch-txt {
-    position: relative;
-    color: black;
-    padding: 5px;
-    text-align: center;
-    background-color: rgba(165, 250, 37, 0.865);
-}
-
-.delicious-txt {
-    position: relative;
-    color: black;
-    padding: 5px;
-    text-align: center;
-    background-color: white;
-}
-
-.dinner-txt {
-    position: relative;
-    color: black;
-    padding: 5px;
-    text-align: center;
-    background-color: rgba(165, 250, 37, 0.865);
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
