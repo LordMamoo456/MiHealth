@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     background-color: rgb(212, 212, 212);
 }
@@ -8,6 +8,10 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -21,7 +25,7 @@ header {
 }
 
 .header-left h1{
-    color: blue;
+    color: rgb(186, 255, 83);
 }
 
 .header-right nav{
@@ -34,7 +38,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    text-align: left;
 }
 
 .meals-left {
@@ -42,6 +45,7 @@ header {
     flex-wrap: wrap;
     max-width: 40%;
     width: auto;
+    padding-right: 5%;
 }
 
 .meals-left h2 {
@@ -54,10 +58,115 @@ header {
 .meals-right {
     display: flex;
     gap: 10px;
+    align-items: stretch; /* Ensures all children are the same height */
+}
+
+.meals-right div {
+    flex: 1; /* Ensures all divs inside meals-right are of equal width */
+    max-width: 100%;
+    overflow: hidden; /* Ensures images don’t overflow their containers */
 }
 
 img {
     height: 100%;
     max-width: 100%;
-    max-height: 100%;
+    object-fit: cover; /* Ensures images are cropped nicely */
+}
+
+@media (max-width: 768px) {
+    #meals {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meals-left,
+    .meals-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .meals-left h2 {
+        font-size: 36px;
+    }
+}
+
+.breakfast {
+    position: relative;
+}
+
+.breakfast .break-txt {
+    position: absolute; /* if overlaying the image */
+    bottom: 0%;
+    left: 35%;
+    text-align: center;
+    width: 65%;
+}
+
+.breakfast h3 {
+    position: relative;
+    left: 20%;
+    margin: 0;
+    padding: 5%;
+    max-width: 70%;
+    background-color: lightgrey;
+}
+
+.breakfast h4 {
+    margin: 0;
+    padding: 8%;
+    background-color: rgb(186, 255, 83);
+}
+
+.lunch {
+    position: relative;
+}
+
+.lunch .lunch-txt {
+    position: absolute; /* if overlaying the image */
+    bottom: 0%;
+    left: 35%;
+    text-align: center;
+    width: 65%;
+}
+
+.lunch h3 {
+    position: relative;
+    left: 20%;
+    margin: 0;
+    padding: 5%;
+    max-width: 70%;
+    background-color: lightgrey;
+}
+
+.lunch h4 {
+    margin: 0;
+    padding: 8%;
+    background-color: rgb(186, 255, 83);
+}
+
+.dinner {
+    position: relative;
+}
+
+.dinner .dinner-txt {
+    position: absolute; /* if overlaying the image */
+    bottom: 0%;
+    left: 35%;
+    text-align: center;
+    width: 65%;
+}
+
+.dinner h3 {
+    position: relative;
+    left: 20%;
+    margin: 0;
+    padding: 5%;
+    max-width: 70%;
+    background-color: lightgrey;
+}
+
+.dinner h4 {
+    margin: 0;
+    padding: 8%;
+    background-color: rgb(186, 255, 83);
 }
