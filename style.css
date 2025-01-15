@@ -25,7 +25,11 @@ header {
 }
 
 .header-left h1{
-    color: rgb(186, 255, 83);
+    color: rgb(237, 241, 17);
+}
+
+.header-left span {
+    color: green;
 }
 
 .header-right nav{
@@ -102,21 +106,6 @@ img {
     width: 65%;
 }
 
-.breakfast h3 {
-    position: relative;
-    left: 20%;
-    margin: 0;
-    padding: 5%;
-    max-width: 70%;
-    background-color: lightgrey;
-}
-
-.breakfast h4 {
-    margin: 0;
-    padding: 8%;
-    background-color: rgb(186, 255, 83);
-}
-
 .lunch {
     position: relative;
 }
@@ -127,21 +116,6 @@ img {
     left: 35%;
     text-align: center;
     width: 65%;
-}
-
-.lunch h3 {
-    position: relative;
-    left: 20%;
-    margin: 0;
-    padding: 5%;
-    max-width: 70%;
-    background-color: lightgrey;
-}
-
-.lunch h4 {
-    margin: 0;
-    padding: 8%;
-    background-color: rgb(186, 255, 83);
 }
 
 .dinner {
@@ -156,17 +130,19 @@ img {
     width: 65%;
 }
 
-.dinner h3 {
+h3 {
     position: relative;
     left: 20%;
     margin: 0;
     padding: 5%;
+    font-size: 20px;
     max-width: 70%;
-    background-color: lightgrey;
+    background-color: rgb(212, 212, 212);
 }
 
-.dinner h4 {
+h4 {
     margin: 0;
     padding: 8%;
-    background-color: rgb(186, 255, 83);
+    font-size: 20px;
+    background-color: rgb(237, 241, 17);
 }
